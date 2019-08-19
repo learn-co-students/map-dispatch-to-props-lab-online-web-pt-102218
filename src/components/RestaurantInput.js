@@ -54,6 +54,9 @@ export class RestaurantInput extends Component {
 
 
 //connect this component by wrapping RestaurantInput below
-export default connect(()=>{{}}, dispatch => ({
-  addRestaurant: restaurant => dispatch(addRestaurant(restaurant))
-}))(RestaurantInput)
+export default connect(
+  ()=>{{}},
+  dispatch => ({
+    addRestaurant: restaurant => dispatch(addRestaurant(restaurant))
+  })
+)(RestaurantInput)
